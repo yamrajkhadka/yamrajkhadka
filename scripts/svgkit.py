@@ -70,7 +70,8 @@ TYPE = {
 
 @functools.lru_cache(maxsize=None)
 def _static_font(family: str, weight: int) -> bytes:
-    font = instancer.instantiateVariableFont(TTFont(FONT_FILES[family]), {"wght": weight})
+    font = instancer.instantiateVariableFont(TTFont(FONT_FILES[family], recalcTimestamp=False), {"wght": weight})
+    font.recalcTimestamp = False  # keep output byte-identical between runs
     buf = io.BytesIO()
     font.save(buf)
     return buf.getvalue()
@@ -104,7 +105,7 @@ def wrap(s: str, cls: str, size: float, max_width: float) -> list[str]:
 
 @functools.lru_cache(maxsize=None)
 def _woff2(family: str, weight: int, chars: str) -> bytes:
-    font = TTFont(io.BytesIO(_static_font(family, weight)))
+    font = TTFont(io.BytesIO(_static_font(family, weight)), recalcTimestamp=False)
     options = subset.Options()
     options.flavor = "woff2"
     options.layout_features = ["kern", "liga", "calt", "ccmp", "locl", "mark", "mkmk", "tnum"]
