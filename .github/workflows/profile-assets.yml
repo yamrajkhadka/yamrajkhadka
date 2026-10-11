@@ -1,0 +1,69 @@
+# Renders the live parts of the profile README (stats panel + contribution snake)
+# and publishes them to the `output` branch, which README.md links to.
+name: Profile assets
+
+on:
+  schedule:
+    - cron: "23 1 * * *" # daily, 07:08 in Kathmandu
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-assets.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Start from what is already published, so one failing step never blanks an image.
+      - name: Restore last published assets
+        run: |
+          mkdir -p dist
+          if git fetch --depth=1 origin output; then
+            git --work-tree=dist checkout FETCH_HEAD -- .
+          fi
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Install font tooling
+        run: pip install -r scripts/requirements.txt
+
+      - name: Render stats panel
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_stats.py --out dist
+
+      - name: Render contribution snake
+        if: ${{ !cancelled() }}
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#60a5fa&color_dots=#141d27,#0b3d2e,#0f6b4c,#10a874,#34d399
+            dist/snake-light.svg?palette=github-light&color_snake=#2563eb&color_dots=#e6eeec,#a7e9cc,#5fcfa0,#10a874,#047857
+
+      - name: Publish to the output branch
+        if: ${{ !cancelled() }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Update profile assets"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
