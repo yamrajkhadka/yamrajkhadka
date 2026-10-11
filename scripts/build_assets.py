@@ -843,8 +843,6 @@ def readme() -> str:
 
 {picture("footer", "Thanks for stopping by. Open to AI research, data science and ML engineering roles, and research collaborations.", width="100%")}
 
-<img src="https://komarev.com/ghpvc/?username={USER}&label=profile%20views&color=10b981&style=flat-square" alt="Profile views">
-
 </div>
 """
 

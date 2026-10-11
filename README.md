@@ -70,6 +70,4 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/footer-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/footer-light.svg"><img alt="Thanks for stopping by. Open to AI research, data science and ML engineering roles, and research collaborations." src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/footer-dark.svg" width="100%"></picture>
 
-<img src="https://komarev.com/ghpvc/?username=yamrajkhadka&label=profile%20views&color=10b981&style=flat-square" alt="Profile views">
-
 </div>
