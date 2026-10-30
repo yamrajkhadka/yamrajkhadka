@@ -7,7 +7,7 @@
   <a href="https://www.yamrajkhadka.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-website-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-website-light.svg"><img alt="Website" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-website-dark.svg" height="46"></picture></a>
   <a href="https://linkedin.com/in/yamraj-khadka-7806b833b"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-linkedin-light.svg"><img alt="LinkedIn" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-linkedin-dark.svg" height="46"></picture></a>
   <a href="https://huggingface.co/yamraj047"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-huggingface-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-huggingface-light.svg"><img alt="Hugging Face" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-huggingface-dark.svg" height="46"></picture></a>
-  <a href="https://nepallawai.yamrajkhadka.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-light.svg"><img alt="Nepal Law AI (live)" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-dark.svg" height="46"></picture></a>
+  <a href="https://nepallaw.yamrajkhadka.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-light.svg"><img alt="Nepal Law AI (live)" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/btn-app-dark.svg" height="46"></picture></a>
 </p>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-about-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-about-light.svg"><img alt="01 — About" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-about-dark.svg" width="100%"></picture>
@@ -18,9 +18,9 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-work-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-work-light.svg"><img alt="02 — Featured work" src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/h-work-dark.svg" width="100%"></picture>
 
-<a href="https://nepallawai.yamrajkhadka.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-light.svg"><img alt="Nepal Legal AI — Mistral 7B fine-tuned with LoRA on Nepali law, grounded by hybrid retrieval (FAISS + BM25, RRF, cross-encoder rerank) over 5,849 provisions from 6 laws." src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-dark.svg" width="100%"></picture></a>
+<a href="https://nepallaw.yamrajkhadka.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-light.svg"><img alt="Nepal Legal AI — Mistral 7B fine-tuned with LoRA on Nepali law, grounded by hybrid retrieval (FAISS + BM25, RRF, cross-encoder rerank) over 5,849 provisions from 6 laws." src="https://raw.githubusercontent.com/yamrajkhadka/yamrajkhadka/main/assets/flagship-dark.svg" width="100%"></picture></a>
 
-<sub><a href="https://nepallawai.yamrajkhadka.com.np"><b>Live app</b></a> &nbsp;·&nbsp; <a href="https://huggingface.co/yamraj047/nepal-legal-mistral-7b">Model on Hugging Face</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/yamraj047/GGUF_with-RAG">GGUF + RAG Space</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/RAG-NEPAL_LAW">Hybrid retriever</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/nepallaw">Web client</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/MOBILE_APP-NEPAL-LAW">Mobile app</a></sub>
+<sub><a href="https://nepallaw.yamrajkhadka.com.np"><b>Live app</b></a> &nbsp;·&nbsp; <a href="https://huggingface.co/yamraj047/nepal-legal-mistral-7b">Model on Hugging Face</a> &nbsp;·&nbsp; <a href="https://huggingface.co/spaces/yamraj047/GGUF_with-RAG">GGUF + RAG Space</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/RAG-NEPAL_LAW">Hybrid retriever</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/nepallaw">Web client</a> &nbsp;·&nbsp; <a href="https://github.com/yamrajkhadka/MOBILE_APP-NEPAL-LAW">Mobile app</a></sub>
 
 <br><br>
 
@@ -49,6 +49,23 @@
 | [**Fake news detection**](https://github.com/yamrajkhadka/Fake-News-Detection-) | TF-IDF with logistic regression, decision tree, random forest |
 | [**Fashion-MNIST classifier**](https://github.com/yamrajkhadka/Fashain-Mnist-Classifier) | L2-regularised network in TensorFlow |
 | [**Deep learning journey**](https://github.com/yamrajkhadka/DeepLearning) | day-by-day notes, from the perceptron to CNNs |
+
+</details>
+
+<details>
+<summary><b>Sites I run</b></summary>
+<br>
+
+| Site | What it does |
+| :-- | :-- |
+| [**Nepal Law AI**](https://nepallaw.yamrajkhadka.com.np) | Every Act of Nepal, section by section, with a grounded legal assistant |
+| [**CalcNepal**](https://calcnepal.pages.dev) | Free calculators for loans, health, dates and Nepali land units |
+| [**Nepal Monitor**](https://nepalmonitor.yamrajkhadka.com.np) | Live air quality, weather and earthquake data for Nepal |
+| [**FileCraft**](https://filecraft.yamrajkhadka.com.np) | Image, PDF and document tools that run in the browser |
+| [**LinguaTools**](https://lingua.yamrajkhadka.com.np) | Free writing, language and speech tools |
+| [**Scholar Atlas**](https://scholaratlas.yamrajkhadka.com.np) | Scholarships and study-abroad costs, checked against official sources |
+| [**Zero to Freelance**](https://freelance.yamrajkhadka.com.np) | Guides and tools for starting freelancing with no budget |
+| [**RAG & LLM writing**](https://blog.yamrajkhadka.com.np) | Notes on building production RAG and LLM systems |
 
 </details>
 

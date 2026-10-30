@@ -27,7 +27,7 @@ LINKS = {
     "website": "https://www.yamrajkhadka.com.np",
     "linkedin": "https://linkedin.com/in/yamraj-khadka-7806b833b",
     "huggingface": "https://huggingface.co/yamraj047",
-    "app": "https://nepallawai.yamrajkhadka.com.np",
+    "app": "https://nepallaw.yamrajkhadka.com.np",
     "model": "https://huggingface.co/yamraj047/nepal-legal-mistral-7b",
     "space": "https://huggingface.co/spaces/yamraj047/GGUF_with-RAG",
     "paper": "https://lnkd.in/g6F8w8nM",
@@ -428,7 +428,7 @@ def flagship(t, theme):
                       stroke=t["brand"], ink=t["brand_text"])
     body.append(tag)
     body.append(text(40 + tag_w + 14, 51.5, "LEGAL AI FOR NEPAL", "m5", 12.5, t["ink3"], tracking=2.2))
-    live = "nepallawai.yamrajkhadka.com.np"
+    live = "nepallaw.yamrajkhadka.com.np"
     url_end = W - 64
     live_x = url_end - text_width(live, "m5", 13) - 14 - text_width("LIVE", "m7", 12, 1.5)
     body.append(f'<circle class="live" cx="{fmt(live_x - 15)}" cy="47" r="7" fill="{t["brand"]}" opacity=".25"/>'
@@ -473,7 +473,7 @@ def flagship(t, theme):
         title="Nepal Legal AI — flagship project",
         desc=desc + " Pipeline: question → dense search (mpnet + FAISS) and BM25 keyword search → reciprocal rank fusion → "
                     "section-number boost → cross-encoder rerank → fine-tuned Mistral 7B → cited answer. "
-                    "Live at nepallawai.yamrajkhadka.com.np.",
+                    "Live at nepallaw.yamrajkhadka.com.np.",
     )
 
 
